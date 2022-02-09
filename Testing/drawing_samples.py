@@ -3,7 +3,6 @@ This is a sample program to show how to draw using the Python programming
 language and the Arcade library.
 02/08/2022
 """
-from tkinter.messagebox import YES
 import arcade
 
 #Open an Arcade window with (Width, Height, "Window_name")
@@ -37,6 +36,7 @@ sun()
 
 #Arcade Text
 arcade.draw_text("Thorup's Love Shack", 210, 530, arcade.color.RED_VIOLET, 14)
+arcade.draw_text("coming soon...", 260, 520, arcade.color.RED_VIOLET, 9)
 
 #DRAWING STOPS...
 arcade.finish_render()
