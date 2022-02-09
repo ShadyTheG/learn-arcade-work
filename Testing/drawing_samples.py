@@ -16,10 +16,10 @@ arcade.set_background_color(arcade.csscolor.SKY_BLUE)
 arcade.start_render()
 
 
-#GRASS
+#GRASS Function
 arcade.draw_lrtb_rectangle_filled(0, 599, 200, 0, arcade.csscolor.DARK_GREEN)
 
-#SUN
+#SUN Function
 def sun():
     arcade.draw_circle_filled(70, 470, 30, arcade.csscolor.YELLOW)
     arcade.draw_line(70, 530, 70, 410, arcade.csscolor.YELLOW, 3) #Top to Bottom
@@ -28,9 +28,15 @@ def sun():
     arcade.draw_line(30, 508, 105, 435, arcade.csscolor.YELLOW, 3)
 
 def clouds():
-    arcade.draw_ellipse_filled(50, 470, 45, 30, arcade.csscolor.PAPAYA_WHIP)
+    arcade.draw_ellipse_filled(40, 500, 80, 65, arcade.csscolor.LIGHT_GREY)
+    arcade.draw_ellipse_filled(55, 460, 105, 80, arcade.csscolor.LIGHT_GREY)
+    arcade.draw_ellipse_filled(115, 490, 105, 70, arcade.csscolor.LIGHT_GREY)
 
 clouds()
+sun()
+
+#Arcade Text
+arcade.draw_text("Thorup's Love Shack", 210, 530, arcade.color.RED_VIOLET, 14)
 
 #DRAWING STOPS...
 arcade.finish_render()
