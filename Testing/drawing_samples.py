@@ -5,20 +5,20 @@ language and the Arcade library.
 """
 import arcade
 
-#Open an Arcade window with (Width, Height, "Window_name")
-arcade.open_window(600, 600, "Test")
+# Open an Arcade window with (Width, Height, "Window_name")
+arcade.open_window(600, 600, "The Love Shack")
 
-#Set background color of window (can use RGB)
+# Set background color of window (can use RGB)
 arcade.set_background_color(arcade.csscolor.SKY_BLUE)
 
-#DRAWING START...
+# DRAWING START...
 arcade.start_render()
 
 
-#GRASS Function
+# GRASS Function
 arcade.draw_lrtb_rectangle_filled(0, 599, 200, 0, arcade.csscolor.DARK_GREEN)
 
-#SUN Function
+# SUN Function
 def sun():
     arcade.draw_circle_filled(70, 470, 30, arcade.csscolor.YELLOW)
     arcade.draw_line(70, 530, 70, 410, arcade.csscolor.YELLOW, 3) #Top to Bottom
@@ -34,13 +34,13 @@ def clouds():
 clouds()
 sun()
 
-#Arcade Text
+# Arcade Text
 arcade.draw_text("Thorup's Love Shack", 210, 530, arcade.color.RED_VIOLET, 14)
 arcade.draw_text("coming soon...", 260, 520, arcade.color.RED_VIOLET, 9)
 
-#DRAWING STOPS...
+# DRAWING STOPS...
 arcade.finish_render()
 
-#Keep the window up until user closes.
+# Keep the window up until user closes.
 arcade.run()
 
